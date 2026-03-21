@@ -46,7 +46,7 @@ header {
 
     }
 
-main {
+main.principal {
     width: 90vw;
     margin: 15px auto ;
 }
@@ -59,7 +59,7 @@ img.pfp {
         padding: 5px;
 }
 
-main>section.container-intro {
+main.principal>section.container-intro {
     box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.121);
     padding: 10px;
     text-align: center;
@@ -67,7 +67,7 @@ main>section.container-intro {
     border: 2px solid var(--painel);
 }
 
-main>section>article.social>a {
+main.principal>section>article.social>a {
     color: black;
     font-size: 1.5em;
     padding: 10px;
@@ -79,11 +79,13 @@ main>section>article.social>a {
 
 .projetos {
     display: grid; 
-    /* O 'auto-fit' cria quantas colunas couberem */
-    /* O 'minmax' diz: no mínimo 300px, no máximo 1 fração do espaço (1fr) */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
+}
+
+h2.gc {
+    grid-column: 1 / -1;
 }
 
 .card-projeto {
@@ -92,6 +94,7 @@ main>section>article.social>a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    
 }
 
 .img-projeto img {
@@ -110,7 +113,6 @@ main>section>article.social>a {
     margin-top: 10px;
     background-color: var(--destaque);
     border: 2px solid var(--painel);
-
 }
 
 .skills-container .info {
