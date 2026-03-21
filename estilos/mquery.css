@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-container {
+        margin: 5px;
+    }
+    
+}
