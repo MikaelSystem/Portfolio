@@ -7,5 +7,26 @@
     .skills-container {
         margin: 5px;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .principal {
+        display: grid;
+        grid-template-columns: 25% 1fr; /*25% de um lado, resto coberto de outro*/
+        padding: 30px;
+        gap: 50px;
+        align-items: start; /*evita que ela estique*/
+    }
     
+    .container-intro {
+        position: sticky;
+        top: 20px;
+        margin-top: 10px ;
+    }
+
+    .projetos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
 }
